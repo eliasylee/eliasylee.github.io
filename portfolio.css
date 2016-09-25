@@ -1,22 +1,44 @@
-#topNav {
+/* Reset */
+
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+/* Content */
+
+.topNav {
   position: fixed;
-  z-index: 9999;
+  top: 0;
   width: 100vw;
   height: 80px;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .mainNav {
-  position: fixed;
-  width: 370px;
-  top: 30px;
-  left: 50%;
-  margin-left: -185px;
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: #ffffff;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -30,19 +52,13 @@ nav a {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#homebox {
-  position: absolute;
-  height: 245px;
-  margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
-
-#logo {
+.logo {
   width: 300px;
-  height: 225px;
-  margin: auto;
 }
 
 #work {
@@ -53,33 +69,6 @@ nav a {
   padding: 0;
 }
 
-#bamfProj {
-  position: absolute;
-  height: 544px;
-  width: 400px;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  margin-top: -272px;
-  margin-left: -200px;
-}
-
-#bamfPic {
-  width: 400px;
-  margin: auto auto 10px auto;
-}
-
-#bamfInfo {
-  width: 100%;
-}
-
-#bamfInfoBox {
-  width: 400px;
-  margin: 0px auto 0px auto;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 div ul {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
@@ -88,43 +77,46 @@ div ul {
   padding: 0px;
 }
 
-div ul:nth-child(2) {
-  text-transform: none;
-  text-align: justify;
-}
-
 #about {
   position: relative;
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#aboutbox {
-  position: absolute;
-  margin: auto;
-  width: 1268px;
+.aboutBox {
   height: 402px;
-  top: 50%;
-  left: 50%;
-  margin-top: -201px;
-  margin-left: -634px;
+  width: 1257px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-#landscape {
+.landscape {
   position: relative;
-  margin: 10px auto auto auto;
+  margin-top: 10px;
 }
 
-#caption {
+.caption {
   font-style: italic;
+  text-transform: none;
+  text-align: justify;
 }
 
-#aboutinfo {
+.aboutInfo {
   width: 400px;
   margin: auto;
   padding: 0;
+}
+
+.aboutInfo ul {
+  text-transform: none;
+  text-align: justify;
 }
 
 #contact {
@@ -133,25 +125,25 @@ div ul:nth-child(2) {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#contactbox {
-  position: absolute;
+.contactBox {
   height: 175px;
   width: 654px;
-  top: 50%;
-  left: 50%;
-  margin-top: -88px;
-  margin-left: -327px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div#contactbox a {
+.contactBox a {
   padding: 0;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
